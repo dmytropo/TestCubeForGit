@@ -6,10 +6,37 @@
     <Name>TestCubeForGit.database</Name>
     <FullPath>TestCubeForGit.database</FullPath>
   </Database>
+  <DataSources>
+    <ProjectItem>
+      <Name>TSQL2012.ds</Name>
+      <FullPath>TSQL2012.ds</FullPath>
+    </ProjectItem>
+  </DataSources>
+  <DataSourceViews>
+    <ProjectItem>
+      <Name>TSQL2012.dsv</Name>
+      <FullPath>TSQL2012.dsv</FullPath>
+    </ProjectItem>
+  </DataSourceViews>
   <Configurations>
     <Configuration>
       <Name>Development</Name>
-      <Options />
+      <Options>
+        <ConnectionMappings>
+          <ConfigurationSetting>
+            <Id>TSQL2012</Id>
+            <Name>TSQL2012</Name>
+            <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=WS-POLISHCHUK\SQLBI;Integrated Security=SSPI;Initial Catalog=TSQL2012</Value>
+          </ConfigurationSetting>
+        </ConnectionMappings>
+        <ConnectionSecurityMappings>
+          <ConfigurationSetting>
+            <Id>TSQL2012</Id>
+            <Name>TSQL2012</Name>
+            <Value xsi:type="xsd:int">0</Value>
+          </ConfigurationSetting>
+        </ConnectionSecurityMappings>
+      </Options>
     </Configuration>
   </Configurations>
 </Project>
